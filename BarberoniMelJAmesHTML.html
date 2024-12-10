@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbershop Booking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Barbershop Booking</h1>
+    <form id="bookingForm">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="barber">Choose Your Barber:</label>
+      <select id="barber" required>
+        <option value="" disabled selected>Select a barber</option>
+        <option value="Barber 1">Barber 1</option>
+        <option value="Barber 2">Barber 2</option>
+        <option value="Barber 3">Barber 3</option>
+      </select>
+
+      <label for="service">Choose a Service:</label>
+      <select id="service" required>
+        <option value="" disabled selected>Select a service</option>
+        <option value="Haircut">Haircut</option>
+        <option value="Shave">Shave</option>
+        <option value="Haircut & Shave">Haircut & Shave</option>
+      </select>
+
+      <label for="time">Choose a Time Slot:</label>
+      <select id="time" required>
+        <option value="" disabled selected>Select a time</option>
+        <option value="9:00 AM">9:00 AM</option>
+        <option value="10:00 AM">10:00 AM</option>
+        <option value="11:00 AM">11:00 AM</option>
+        <option value="12:00 PM">12:00 PM</option>
+        <option value="1:00 PM">1:00 PM</option>
+      </select>
+
+      <button type="submit">Book Appointment</button>
+    </form>
+
+    <div id="confirmation" class="hidden">
+      <h2>Appointment Confirmed!</h2>
+      <p id="details"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
