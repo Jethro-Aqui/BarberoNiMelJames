@@ -1,0 +1,79 @@
+<section>
+    <div class="container pt-5">
+        <h1>Schedule Appointment</h1>
+        <form id="form">
+            <div class="row">
+                <div class="col-md-5 p-2">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="firstname" required>
+                    </div>
+                </div>
+                <div class="col-md-5 p-2">
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="lastname" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5 p-2">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Example@gmail.com" required>
+                    </div>
+                </div>
+                <div class="col-md-5 p-2">
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="Enter Valid Phone Number" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5 p-2">
+                    <div class="form-group">
+                        <label for="appointmentdate">Appointment Date</label>
+                        <input type="date" id="appointmentdate" required>
+                    </div>
+                </div>
+                <div class="col-md-5 p-2">
+                    <div class="form-group">
+                        <label for="appointmenttime">Appointment Time</label>
+                        <input type="time" id="appointmenttime" min="09:00" max="18:00" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5 p-2">
+                    <div class="form-group">
+                        <label for="barber">Select Barber</label>
+                        <select id="barber" required>
+                            <option value="">--Select Barber--</option>
+                            <option value="John">John</option>
+                            <option value="David">David</option>
+                            <option value="Mike">Mike</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-5 p-2">
+                    <div class="form-group">
+                        <label for="service">Select Service</label>
+                        <select id="service" required>
+                            <option value="">--Select Service--</option>
+                            <option value="Haircut">Haircut</option>
+                            <option value="Shave">Shave</option>
+                            <option value="Haircut & Shave">Haircut & Shave</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <p id="error" class="text-bg-danger"></p>
+            <button class="costom-button nav-link" id="button" type="submit">Book Now</button>
+        </form>
+    </div>
+</section>
